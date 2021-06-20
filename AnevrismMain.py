@@ -7,6 +7,7 @@ def nums_gen():  # генератор номеров систем сосудов
     for i in (100+i for i in range(1, 100)):
         yield i
 
+
 def search_anv(lst):
     ans, f1, avg = [], False, sum(lst)/len(lst)
     for i, el in enumerate(lst):
